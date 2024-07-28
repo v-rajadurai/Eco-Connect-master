@@ -1,0 +1,10 @@
+
+.button-get-address{
+    position: relative;
+    top:17%;
+    width: 100%;
+}
+.button:hover{
+    transition:  0.5s;
+    
+}
