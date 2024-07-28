@@ -32,7 +32,7 @@ To get a local copy up and running, follow these simple steps.
 - Clone the repo
   
   ```bash
-  gh repo clone G-Pavithran-dev/Eco-Connect
+  gh repo clone v-rajadurai/Eco-Connect-master
   ```
 - Install NPM packages
   
@@ -51,8 +51,6 @@ To get a local copy up and running, follow these simple steps.
   npm run dev
   ```
   Open [http://localhost:5713](http://localhost:5713) to view it in the browser.
-
-- Also you can experience our live site [Eco Connect](https://eco-connect-infinity.vercel.app)
 
 ## My Team Mate's Contributions 
 
