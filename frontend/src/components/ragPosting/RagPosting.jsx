@@ -85,314 +85,100 @@ const RagPosting = () => {
   <div className="service">
     <h2>Areas we provide service</h2>
     <div className="service-area">
-      <div style={{ textAlign: "center", margin: "10px" }}>
-        <Card
-          className="transfer"
-          sx={{
-            width: 150,
-            height: 150,
-            boxShadow: "0px 4px 20px rgba(0, 0, 0, 0.1)",
-            padding: "10px",
-            margin: "10px",
-            borderRadius: "10px",
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
+      <Grid item sx={12}>
+        <div className="service-card">
+          <Card className="transfer">
+            <div className="icon">
+              <img src={tamilnadu} alt="Tamil Nadu" />
+            </div>
+          </Card>
+          <h5>Tamil Nadu</h5>
+        </div>
+      </Grid>
+      <div className="service-card">
+        <Card className="transfer">
           <div className="icon">
-            <img src={tamilnadu} style={{
-              width: '170%',
-              height: '170%',
-              objectFit: 'cover', // This ensures the image covers the entire card
-            }} alt="Tamil Nadu" />
-          </div>
-        </Card>
-        <h5>Tamil Nadu</h5>
-      </div>
-      <div style={{ textAlign: "center", margin: "10px" }}>
-        <Card
-          className="transfer"
-          sx={{
-            width: 150,
-            height: 150,
-            boxShadow: "0px 4px 20px rgba(0, 0, 0, 0.1)",
-            padding: "10px",
-            margin: "10px",
-            borderRadius: "10px",
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          <div className="icon">
-            <img src={ladakh} style={{
-              width: '170%',
-              height: '170%',
-              objectFit: 'cover',
-            }} alt="Jammu & Kashmir" />
+            <img src={ladakh} alt="Jammu & Kashmir" />
           </div>
         </Card>
         <h5>Jammu & Kashmir</h5>
       </div>
-      <div style={{ textAlign: "center", margin: "10px" }}>
-        <Card
-          className="transfer"
-          sx={{
-            width: 150,
-            height: 150,
-            boxShadow: "0px 4px 20px rgba(0, 0, 0, 0.1)",
-            padding: "10px",
-            margin: "10px",
-            borderRadius: "10px",
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
+      <div className="service-card">
+        <Card className="transfer">
           <div className="icon">
-            <img src={kerala} style={{
-              width: '170%',
-              height: '170%',
-              objectFit: 'cover',
-            }} alt="Kerala" />
+            <img src={kerala} alt="Kerala" />
           </div>
         </Card>
         <h5>Kerala</h5>
       </div>
-      <div style={{ textAlign: "center", margin: "10px" }}>
-        <Card
-          className="transfer"
-          sx={{
-            width: 150,
-            height: 150,
-            boxShadow: "0px 4px 20px rgba(0, 0, 0, 0.1)",
-            padding: "10px",
-            margin: "10px",
-            borderRadius: "10px",
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
+      <div className="service-card">
+        <Card className="transfer">
           <div className="icon">
-            <img src={delhi} style={{
-              width: '170%',
-              height: '170%',
-              objectFit: 'cover',
-            }} alt="Delhi" />
+            <img src={delhi} alt="Delhi" />
           </div>
         </Card>
         <h5>Delhi</h5>
       </div>
-      <div style={{ textAlign: "center", margin: "10px" }}>
-        <Card
-          className="transfer"
-          sx={{
-            width: 150,
-            height: 150,
-            boxShadow: "0px 4px 20px rgba(0, 0, 0, 0.1)",
-            padding: "10px",
-            margin: "10px",
-            borderRadius: "10px",
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
+      <div className="service-card">
+        <Card className="transfer">
           <div className="icon">
-            <img src={taj} style={{
-              width: '170%',
-              height: '170%',
-              objectFit: 'cover',
-            }} alt="Uttar Pradesh" />
+            <img src={taj} alt="Uttar Pradesh" />
           </div>
         </Card>
         <h5>Uttar Pradesh</h5>
       </div>
-      <div style={{ textAlign: "center", margin: "10px" }}>
-        <Card
-          className="transfer"
-          sx={{
-            width: 150,
-            height: 150,
-            boxShadow: "0px 4px 20px rgba(0, 0, 0, 0.1)",
-            padding: "10px",
-            margin: "10px",
-            borderRadius: "10px",
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
+      <div className="service-card">
+        <Card className="transfer">
           <div className="icon">
-            <img src={maharashtra} style={{
-              width: '170%',
-              height: '170%',
-              objectFit: 'cover',
-            }} alt="Maharashtra" />
+            <img src={maharashtra} alt="Maharashtra" />
           </div>
         </Card>
         <h5>Maharashtra</h5>
       </div>
-      <div style={{ textAlign: "center", margin: "10px" }}>
-        <Card
-          className="transfer"
-          sx={{
-            width: 150,
-            height: 150,
-            boxShadow: "0px 4px 20px rgba(0, 0, 0, 0.1)",
-            padding: "10px",
-            margin: "10px",
-            borderRadius: "10px",
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
+      <div className="service-card">
+        <Card className="transfer">
           <div className="icon">
-            <img src={goa} style={{
-              width: '170%',
-              height: '170%',
-              objectFit: 'cover',
-            }} alt="Goa" />
+            <img src={goa} alt="Goa" />
           </div>
         </Card>
         <h5>Goa</h5>
       </div>
-      <div style={{ textAlign: "center", margin: "10px" }}>
-        <Card
-          className="transfer"
-          sx={{
-            width: 150,
-            height: 150,
-            boxShadow: "0px 4px 20px rgba(0, 0, 0, 0.1)",
-            padding: "10px",
-            margin: "10px",
-            borderRadius: "10px",
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
+      <div className="service-card">
+        <Card className="transfer">
           <div className="icon">
-            <img src={kolkata} style={{
-              width: '170%',
-              height: '170%',
-              objectFit: 'cover',
-            }} alt="Kolkata" />
+            <img src={kolkata} alt="Kolkata" />
           </div>
         </Card>
         <h5>Kolkata</h5>
       </div>
-      <div style={{ textAlign: "center", margin: "10px" }}>
-        <Card
-          className="transfer"
-          sx={{
-            width: 150,
-            height: 150,
-            boxShadow: "0px 4px 20px rgba(0, 0, 0, 0.1)",
-            padding: "10px",
-            margin: "10px",
-            borderRadius: "10px",
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
+      <div className="service-card">
+        <Card className="transfer">
           <div className="icon">
-            <img src={karnataka} style={{
-              width: '170%',
-              height: '170%',
-              objectFit: 'cover',
-            }} alt="Karnataka" />
+            <img src={karnataka} alt="Karnataka" />
           </div>
         </Card>
         <h5>Karnataka</h5>
       </div>
-      <div style={{ textAlign: "center", margin: "10px" }}>
-        <Card
-          className="transfer"
-          sx={{
-            width: 150,
-            height: 150,
-            boxShadow: "0px 4px 20px rgba(0, 0, 0, 0.1)",
-            padding: "10px",
-            margin: "10px",
-            borderRadius: "10px",
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
+      <div className="service-card">
+        <Card className="transfer">
           <div className="icon">
-            <img src={Pondicherry} style={{
-              width: '170%',
-              height: '170%',
-              objectFit: 'cover',
-            }} alt="Pondicherry" />
+            <img src={Pondicherry} alt="Pondicherry" />
           </div>
         </Card>
         <h5>Pondicherry</h5>
       </div>
-      <div style={{ textAlign: "center", margin: "10px" }}>
-        <Card
-          className="transfer"
-          sx={{
-            width: 150,
-            height: 150,
-            boxShadow: "0px 4px 20px rgba(0, 0, 0, 0.1)",
-            padding: "10px",
-            margin: "10px",
-            borderRadius: "10px",
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
+      <div className="service-card">
+        <Card className="transfer">
           <div className="icon">
-            <img src={Uttarakhand} style={{
-              width: '170%',
-              height: '170%',
-              objectFit: 'cover',
-            }} alt="Pondicherry" />
+            <img src={Uttarakhand} alt="Uttarakhand" />
           </div>
         </Card>
         <h5>Uttarakhand</h5>
       </div>
-      <div style={{ textAlign: "center", margin: "10px" }}>
-        <Card
-          className="transfer"
-          sx={{
-            width: 150,
-            height: 150,
-            boxShadow: "0px 4px 20px rgba(0, 0, 0, 0.1)",
-            padding: "10px",
-            margin: "10px",
-            borderRadius: "10px",
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
+      <div className="service-card">
+        <Card className="transfer">
           <div className="icon">
-            <img src={Nagaland} style={{
-              width: '170%',
-              height: '170%',
-              objectFit: 'cover',
-            }} alt="Pondicherry" />
+            <img src={Nagaland} alt="Nagaland" />
           </div>
         </Card>
         <h5>Nagaland</h5>
@@ -400,6 +186,8 @@ const RagPosting = () => {
     </div>
   </div>
 </div>
+
+
 <Footer />
     </div>
   );
