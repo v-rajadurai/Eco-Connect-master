@@ -1,4 +1,4 @@
-# Eco-Connect
+# Eco-Connect Recycle and Recover
 
 This project aims to bridge the gap between consumers looking to dispose of recyclable materials and rag pickers seeking to collect them. It provides a platform where consumers can post details about the recyclable materials they have, and rag pickers can accept these requests. The platform also allows users to find rag pickers or post requests for rag collection.
 
@@ -52,9 +52,4 @@ To get a local copy up and running, follow these simple steps.
   ```
   Open [http://localhost:5713](http://localhost:5713) to view it in the browser.
 
-## My Team Mate's Contributions 
 
-- [Nithish Kumar P](https://github.com/nithishuchiha) - **Frontend** - Home Page, Login & SignUp Page
-- [Logesh Kumar M](https://github.com/Logeshkumar007) - **Frontend** - Page for consumers, **Backend** - Maintaining Rags
-- [Parthiban P](https://github.com/Parthiban-P-dev) - **Frontend** - About Us & Support Page
-- [Nambu Ajai N](https://github.com/Nambuajai) - **DashBoard**
