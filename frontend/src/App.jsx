@@ -8,7 +8,7 @@ import Home from './components/HomePage/Home'
 import Footer from './components/footer/Footer'
 import FindUsers from './components/find_user/FindUsers'
 import SignUp from './components/Authorization/Signup'
-import SignInSide from './components/Authorization/SignIn'
+import SignInSide from './components/Authorization/Sign'
 import { About } from './components/About/about'
 import FindPicker from './components/ragPosting/FindPicker'
 
