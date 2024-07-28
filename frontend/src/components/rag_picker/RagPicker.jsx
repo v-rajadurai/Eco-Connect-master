@@ -97,7 +97,7 @@ export default function RagPicker() {
             component={'form'}
             onSubmit={handleSubmit}
           >
-            <h2 style={{ textAlign: 'center' }}>Join as eco-connector</h2>
+            <h2 style={{ textAlign: 'center' }}>Join as Rag-connector</h2>
             <TextField
               id="name"
               name="name"
@@ -301,7 +301,7 @@ export default function RagPicker() {
           </Grid>
         </Grid>
       </Box>
-      {/* <Box
+      <Box
         sx={{
           width: '100%',
           display: 'flex',
@@ -330,12 +330,12 @@ export default function RagPicker() {
           </Grid>
         </Grid>
         
-      </Box>  */}
+      </Box> 
            <Footer />
       <Dialog open={successDialogOpen} onClose={handleCloseSuccessDialog}>
-        <DialogTitle>🎉 Submission Successful 🎉</DialogTitle>
+        <DialogTitle>🎉 Congratulations 🎉</DialogTitle>
         <DialogContent>
-          Thank you for posting your rag details. We will inform you once a picker accepts your order.
+        Welcome! You are now an Eco Connector!.you will help make our world greener while earning rewards. Thank you for making a difference!
         </DialogContent>
         <DialogActions>
           <Button onClick={handleCloseSuccessDialog}>Close</Button>

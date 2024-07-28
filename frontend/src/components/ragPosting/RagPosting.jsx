@@ -22,6 +22,8 @@ import kolkata from "../support/kolkata.jpg";
 import goa from "../support/goa.jpg";
 import karnataka from "../support/karnataka.jpg";
 import Pondicherry from "../support/Pondicherry.jpg";
+import Uttarakhand from "../support/Uttarakhand.jpg";
+import Nagaland from "../support/Nagaland.jpg";
 
 const RagPosting = () => {
   return (
@@ -360,14 +362,14 @@ const RagPosting = () => {
           }}
         >
           <div className="icon">
-            <img src={Pondicherry} style={{
+            <img src={Uttarakhand} style={{
               width: '170%',
               height: '170%',
               objectFit: 'cover',
             }} alt="Pondicherry" />
           </div>
         </Card>
-        <h5>Pondicherry</h5>
+        <h5>Uttarakhand</h5>
       </div>
       <div style={{ textAlign: "center", margin: "10px" }}>
         <Card
@@ -386,56 +388,19 @@ const RagPosting = () => {
           }}
         >
           <div className="icon">
-            <img src={Pondicherry} style={{
+            <img src={Nagaland} style={{
               width: '170%',
               height: '170%',
               objectFit: 'cover',
             }} alt="Pondicherry" />
           </div>
         </Card>
-        <h5>Pondicherry</h5>
+        <h5>Nagaland</h5>
       </div>
     </div>
   </div>
 </div>
-            <div className="works">
-
-        <Box 
-        sx={{
-          width: '100%',
-          display: 'flex',
-          flexDirection: 'column',
-          paddingBottom: '4rem',
-          
-        }}
-      >
-        <Typography variant="h4" sx={{ textAlign: 'center', margin: '2rem 0' }}>
-          How it works?
-        </Typography>
-        <Grid container spacing={4} sx={{ textAlign: 'center' }}>
-          <Grid item lg={4}>
-            <Looks1Icon color="primary" sx={{ fontSize: '3rem' }} />
-            <Typography variant="h5">Sign up</Typography>
-            <Typography>Fill the form above to join us.</Typography>
-          </Grid>
-          <Grid item lg={4}>
-            <Looks2Icon color="primary" sx={{ fontSize: '3rem' }} />
-            <Typography variant="h5">Collect Rag</Typography>
-            <Typography>Collect rag from your area.</Typography>
-          </Grid>
-          <Grid item lg={4}>
-            <Looks3Icon color="primary" sx={{ fontSize: '3rem' }} />
-            <Typography variant="h5">Get paid</Typography>
-            <Typography>Get paid for the waste you collect.</Typography>
-          </Grid>
-        </Grid>
-        
-      </Box>
-        {/* </div>
-      </div> */}
-      </div>
-
-      <Footer />
+<Footer />
     </div>
   );
 };

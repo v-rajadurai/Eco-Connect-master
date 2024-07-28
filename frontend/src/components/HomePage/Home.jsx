@@ -20,6 +20,7 @@ import eWaste from "../../../public/e-waste.png";
 // import bgimage from "../../../public/bgimage.png";
 import Footer from "../footer/Footer";
 import { Link } from "react-router-dom";
+import { grey } from "@mui/material/colors";
 const Home = () => {
   const [age, setAge] = React.useState("");
 
@@ -65,45 +66,7 @@ const Home = () => {
             backgroundColor: "white",
           }}
         >
-          {/* <div
-            style={{
-              color: "black",
-              fontSize: "1.2rem",
-              fontWeight: "lighter",
-            }}
-          >
-            City:
-          </div>
-          <FormControl sx={{ m: 1, minWidth: 150 }}>
-            <InputLabel
-              id="demo-simple-select-autowidth-label"
-              style={{ color: "black" }}
-            >
-              Location
-            </InputLabel>
-            <Select
-              labelId="demo-simple-select-autowidth-label"
-              id="demo-simple-select-autowidth"
-              value={age}
-              onChange={handleChange}
-              autoWidth
-              label="Location"
-            >
-              <MenuItem value="">
-                <em>None</em>
-              </MenuItem>
-              <MenuItem value={1}>Mumbai</MenuItem>
-              <MenuItem value={2}>Delhi</MenuItem>
-              <MenuItem value={3}>Bangalore</MenuItem>
-              <MenuItem value={4}>Hyderabad</MenuItem>
-              <MenuItem value={5}>Ahmedabad</MenuItem>
-              <MenuItem value={6}>Chennai</MenuItem>
-              <MenuItem value={7}>Kolkata</MenuItem>
-              <MenuItem value={8}>Surat</MenuItem>
-              <MenuItem value={9}>Pune</MenuItem>
-              <MenuItem value={10}>Jaipur</MenuItem>
-            </Select>
-          </FormControl> */}
+          
         </div>
         <div
           style={{
@@ -239,13 +202,16 @@ const Home = () => {
         <div
           style={{
             fontFamily: "sans-serif",
-            color: "grey",
+            color: "black",
             fontSize: "1.5rem",
             display: "flex",
             justifyContent: "center",
           }}
         >
+          <h3>
+
           Our Services
+          </h3>
         </div>
 
         <div
@@ -253,14 +219,15 @@ const Home = () => {
             display: "flex",
             justifyContent: "space-evenly",
             marginLeft: "10%",
-            width: "80%",
+            width: "75%",
             gap: "20px",
             padding: "10px",
             overflowX: "scroll",
             overflowY: "hidden",
             transition: "3s",
             scrollbarWidth: "hide",
-            scrollbarColor: "rgba(51,51,51,.24) #fff",
+            scrollbarColor:"white",
+            // scrollbarColor: "rgba(51,51,51,.24) #fff",
           }}
         >
           <Card
@@ -273,6 +240,7 @@ const Home = () => {
               boxShadow: "0 2px 8px rgba(0,0,0, .08)",
               background: "linear-gradient(to right, purple, red)",
               transition: "transform 0.3s ease-in-out",
+              
               
             }}
           >
@@ -290,7 +258,7 @@ const Home = () => {
                   fontWeight: "400",
                   fontSize: "2rem",
                   color: "white",
-                  letterSpacing: ".02rem",
+                  letterSpacing: ".01rem",
                 }}
               >
                 &quot;Recycling for a Greener Tomorrow &quot;
@@ -318,7 +286,7 @@ const Home = () => {
               borderRadius: "1.4rem",
               alignItems: "center",
               boxShadow: "0 2px 8px rgba(0,0,0, .08)",
-              
+              backgroundColor:"grey",
               transition: "transform 0.3s ease-in-out",
               
             }}
@@ -327,6 +295,7 @@ const Home = () => {
               sx={{ height: 50, borderRadius: "2.4rem" }}
               image="/static/images/cards/ragpicker2.jpg"
               title="Rag Picker"
+              
             />
             <CardContent>
               <Typography
@@ -358,7 +327,7 @@ const Home = () => {
               alignItems: "center",
               boxShadow: "0 2px 8px rgba(0,0,0, .08)",
              transition: "transform 0.3s ease-in-out",
-              
+              backgroundColor:"grey"
             }}
           >
             <CardMedia
@@ -396,7 +365,7 @@ const Home = () => {
               alignItems: "center",
               boxShadow: "0 2px 8px rgba(0,0,0, .08)",
               transition: "transform 0.3s ease-in-out",
-              
+              backgroundColor:"grey"
             }}
           >
             <CardMedia
@@ -434,7 +403,7 @@ const Home = () => {
               alignItems: "center",
               boxShadow: "0 2px 8px rgba(0,0,0, .08)",
              transition: "transform 0.3s ease-in-out",
-              
+              backgroundColor:"grey"
             }}
           >
             <CardMedia
@@ -472,7 +441,7 @@ const Home = () => {
               alignItems: "center",
               boxShadow: "0 2px 8px rgba(0,0,0, .08)",
                transition: "transform 0.3s ease-in-out",
-              
+              backgroundColor:"grey"
             }}
           >
             <CardMedia

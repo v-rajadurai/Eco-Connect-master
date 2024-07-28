@@ -5,7 +5,7 @@
   font-family: sans-serif;
 }
 .background {
-  width: 100%;
+  /* width: 150%; */
   background-image: url("../../../public/Designer\ \(1\).png");
 }
 .Description {
@@ -21,9 +21,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100px; /* Adjust width as needed */
+  width: 150px; /* Adjust width as needed */
   height: 100px; /* Adjust height as needed */
-  margin-bottom: 10px; /* Space between icon and text */
+  margin-bottom: 50px; /* Space between icon and text */
 }
 
 .icon img {
