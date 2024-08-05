@@ -15,7 +15,8 @@ public class LogService {
         try {
             logrep.save(log);
             return true;
-        } catch (Exception e) {
+        } catch (Exception e) 
+        {
             e.printStackTrace();
             return false;
         }
@@ -23,8 +24,10 @@ public class LogService {
     public boolean autho( String email, String password) {
         LoginModel foundUser = logrep.findById(email).orElse(null);
         if (foundUser != null && foundUser.getPass().equals(password)) {
+            System.out.println("Found User");
             return true; 
         }
+        System.out.println("Found NOt User, " + foundUser);
         return false; 
     }
 }

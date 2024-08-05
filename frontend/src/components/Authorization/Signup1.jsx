@@ -44,7 +44,7 @@ export default function SignUp() {
         console.log("Success:", response.data);
 
         setTimeout(() => {
-          navigate("/login");
+          navigate("/");
         }, 2000);
       })
       .catch((error) => {
@@ -61,7 +61,7 @@ export default function SignUp() {
       className="signup"
       style={{
         height: "100vh",
-        backgroundImage: `url(${image})`,
+       
         backgroundRepeat: "no-repeat",
         backgroundPosition: "cover",
         backgroundSize: "cover",
@@ -162,9 +162,9 @@ export default function SignUp() {
             </Button>
             <Grid container justifyContent="flex-end">
               <Grid item>
-                {/* <Link href="" variant="body2"> */}
+                <Link href="/" variant="body2">
                 Already have an account? Sign in
-                {/* </Link> */}
+                </Link>
               </Grid>
             </Grid>
           </Box>

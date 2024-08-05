@@ -36,25 +36,13 @@ export default function FindUsers() {
     setOpenDialog(false);
   };
 
-  const handleAcceptOrder = () => {
-    setUsers((currentUsers) =>
-      currentUsers.filter((user) => user.id !== selectedUserId)
-    );
-    setOpenDialog(true);
-  };
-
-  const handleDelete = (id) => {
+  const handleAcceptClick = (id) => {
     axios.delete(`http://localhost:8080/ecoconnect/deleteRag/${id}`)
       .then(response => {
         console.log('Delete successful');
-        // Fetch the updated list of users
-        axios.get('http://localhost:8080/ecoconnect/getRags')
-          .then(response => {
-            setUsers(response.data);
-          })
-          .catch(error => {
-            console.error('Error fetching updated rag data:', error);
-          });
+        setUsers((currentUsers) => currentUsers.filter((user) => user.id !== id));
+        setSelectedUserId(id);
+        setOpenDialog(true);
       })
       .catch(error => {
         console.error('Error deleting rag:', error);
@@ -103,7 +91,7 @@ export default function FindUsers() {
                       fullWidth="md"
                       variant="contained"
                       color="success"
-                      onClick={() => handleDelete(user.id)}
+                      onClick={() => handleAcceptClick(user.id)}
                     >
                       Accept
                     </Button>
@@ -115,7 +103,7 @@ export default function FindUsers() {
         </TableContainer>
       </div>
 
-      <Dialog open={openDialog} onClose={handleAcceptOrder}>
+      <Dialog open={openDialog} onClose={handleClose}>
         <DialogTitle sx={{ backgroundColor: '#4caf50', color: '#fff' }}>
           Order Accepted 🎉
         </DialogTitle>

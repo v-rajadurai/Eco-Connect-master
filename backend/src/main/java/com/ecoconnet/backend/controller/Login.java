@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.ecoconnet.backend.model.LoginModel;
-import com.ecoconnet.backend.service.LoginService;
 import com.ecoconnet.backend.service.LogService;
 
 @CrossOrigin("http://localhost:5173/")

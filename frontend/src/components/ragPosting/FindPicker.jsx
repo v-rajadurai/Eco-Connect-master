@@ -71,8 +71,7 @@ const FindPicker = () => {
       email: email,
       phone: phn,
       address: address + ', ' + city + ', ' + state,
-      // city: city,
-      // state: state,
+      
       ragType: ragselect,
       quantity: quantity,
       estimatedAmount: estimatedvalue,
@@ -82,7 +81,17 @@ const FindPicker = () => {
     axios.post('http://localhost:8080/ecoconnect/postragger/post', formData)
       .then(response => {
         console.log(response.data);
-        setSuccessDialogOpen(true); // Open success dialog on successful submission
+        setSuccessDialogOpen(true);
+        setFName("");
+        setLName("");
+        setEmail("");
+        setPhn("");
+        setAddress("");
+        setCity("");
+        setState("");
+        setQuantity('');
+        setRagselect("");
+        setEstimatedvalue(0); // Open success dialog on successful submission
       })
       .catch(error => {
         console.error('Error:', error);
@@ -159,10 +168,11 @@ const FindPicker = () => {
                 <TextField
                   fullWidth
                   label="Phone Number"
-                  type="tel"
+                  type="phone"
                   value={phn}
                   onChange={(e) => setPhn(e.target.value)}
                   required
+                  inputProps={{maxLenght:10}}
                 />
               </Grid>
               <Grid item xs={12}>
@@ -176,21 +186,6 @@ const FindPicker = () => {
               </Grid>
               <Grid item xs={6}>
                 <FormControl fullWidth>
-                  <InputLabel>City</InputLabel>
-                  <Select
-                    value={city}
-                    onChange={(e) => setCity(e.target.value)}
-                    label="City"
-                    required
-                  >
-                    {cities.map((city) => (
-                      <MenuItem key={city} value={city}>{city}</MenuItem>
-                    ))}
-                  </Select>
-                </FormControl>
-              </Grid>
-              <Grid item xs={6}>
-                <FormControl fullWidth>
                   <InputLabel>State</InputLabel>
                   <Select
                     value={state}
@@ -200,6 +195,21 @@ const FindPicker = () => {
                   >
                     {states.map((state) => (
                       <MenuItem key={state} value={state}>{state}</MenuItem>
+                    ))}
+                  </Select>
+                </FormControl>
+              </Grid>
+              <Grid item xs={6}>
+                <FormControl fullWidth>
+                  <InputLabel>City</InputLabel>
+                  <Select
+                    value={city}
+                    onChange={(e) => setCity(e.target.value)}
+                    label="City"
+                    required
+                  >
+                    {cities.map((city) => (
+                      <MenuItem key={city} value={city}>{city}</MenuItem>
                     ))}
                   </Select>
                 </FormControl>
@@ -245,7 +255,9 @@ const FindPicker = () => {
                   <Button onClick={handleCloseDialog} style={{color: "black"}}>
                     Cancel
                   </Button>
-                  <Button type="submit" variant="outlined" style={{color: "white",backgroundColor:"black"}}>
+                  <Button type="submit" 
+                  variant="outlined" style={{color: "white",backgroundColor:"black"}}
+                  >
                     Submit
                   </Button>
                 </DialogActions>

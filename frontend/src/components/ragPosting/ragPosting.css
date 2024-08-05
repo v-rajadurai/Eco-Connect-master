@@ -134,29 +134,5 @@
     margin-bottom: 5dvh;
     
 }
-.service{
-    /* width: 90%; */
-   /* height: 10rem; */
-   margin-bottom: 10px;
-   
-    
-}
-.service-area{
-    display: grid;
-    grid-template-columns: auto auto auto auto auto auto;
-    gap: 4%;
-    line-height: 250%;
-    grid-template-columns: repeat(6, 1fr);
-   
-    
-}
-.all-area h3{
-    font-weight: 200;
-}
-.service h2{
-    /* background: blue; */
-    text-align: center;
-    margin-bottom: 5%;
-    font-size: 2rem;
-}
+
 

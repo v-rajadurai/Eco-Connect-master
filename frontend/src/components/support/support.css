@@ -1,6 +1,6 @@
 .support-main{
-    /* background-color: black; */
-    color: rgb(8, 8, 8);
+    background-color: black;
+    color: white;
 }
 .title{
     text-align: center;
@@ -32,8 +32,8 @@
     gap: 7%;
     width: 100%;
     /* background-color: blue; */
-    background-color: rgb(255, 255, 255);
-    /* color: black; */
+    background-color: white;
+    color: black;
     border-radius: 10px;
     padding: 10px;
     transition: background 0.5s,transform 0.5s;
@@ -81,7 +81,7 @@
 
  
    background-color: white;
-   color: rgb(107, 107, 107);
+   color: rgb(0, 0, 0);
    border-radius: 10px;
    /* padding: 10px; */
  

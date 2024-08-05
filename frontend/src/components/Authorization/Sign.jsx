@@ -18,8 +18,7 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import IconButton from "@mui/material/IconButton";
 import Brightness7Icon from "@mui/icons-material/Brightness7";
 import NightsStayIcon from "@mui/icons-material/NightsStay";
-import darkBack from "../../../src/images/im12.png";
-import whiteBack from "../../../public/images/white_backgroumd.jfif";
+import Recycle from "../support/rr.webp"
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
@@ -75,12 +74,12 @@ export default function SignInSide() {
           password: password,
         },
       });
-      if (response.status === 200) {
+      console.log("Response:", response);
+      if (response.data == true) {
         setTimeout(() => {
           navigate("/home");
         }, 2000);
       }
-      console.log("Response:", response);
     } catch (error) {
       console.error("Problem in authorization", error);
     }
@@ -96,14 +95,16 @@ export default function SignInSide() {
           sm={4}
           md={7}
           sx={{
-            backgroundImage: `url(${darkMode ? darkBack : whiteBack})`,
+            backgroundImage: `url(${Recycle})`,
+            // backgroundImage:URL(""),
             backgroundRepeat: "no-repeat",
-            backgroundColor: (t) =>
-              t.palette.mode === "light"
-                ? t.palette.grey[50]
-                : t.palette.grey[900],
+            // backgroundColor: (t) =>
+            //   t.palette.mode === "light"
+            //     ? t.palette.grey[50]
+            //     : t.palette.grey[900],
             backgroundSize: "cover",
             backgroundPosition: "center",
+            
           }}
         />
         <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square>

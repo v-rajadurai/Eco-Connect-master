@@ -288,7 +288,10 @@ const Home = () => {
               boxShadow: "0 2px 8px rgba(0,0,0, .08)",
               backgroundColor:"grey",
               transition: "transform 0.3s ease-in-out",
-              
+              background:
+                "conic-gradient(from 180deg at 50% 50%, #00aa3a 0deg, #0f2597 90deg, #00aa3a 360deg), #8a59f2;",
+              // transition: "transform 0.3s ease-in-out",
+              "&:hover": { transform: "scale(1.05)" },
             }}
           >
             <CardMedia
@@ -327,7 +330,11 @@ const Home = () => {
               alignItems: "center",
               boxShadow: "0 2px 8px rgba(0,0,0, .08)",
              transition: "transform 0.3s ease-in-out",
-              backgroundColor:"grey"
+              backgroundColor:"grey",
+              background:
+              "conic-gradient(from 180deg at 50% 50%, #0007aa 0deg, #b9063c 90deg, #0007aa 360deg), #8a59f2;",
+            // transition: "transform 0.3s ease-in-out",
+            "&:hover": { transform: "scale(1.05)" },
             }}
           >
             <CardMedia
@@ -365,7 +372,11 @@ const Home = () => {
               alignItems: "center",
               boxShadow: "0 2px 8px rgba(0,0,0, .08)",
               transition: "transform 0.3s ease-in-out",
-              backgroundColor:"grey"
+              backgroundColor:"grey",
+              background:
+                "conic-gradient(from 180deg at 50% 50%, #0aa 0deg, #1410ca 90deg, #0aa 1turn), #8a59f2",
+              // transition: "transform 0.3s ease-in-out",
+              "&:hover": { transform: "scale(1.05)" },
             }}
           >
             <CardMedia
@@ -404,6 +415,11 @@ const Home = () => {
               boxShadow: "0 2px 8px rgba(0,0,0, .08)",
              transition: "transform 0.3s ease-in-out",
               backgroundColor:"grey"
+              ,
+              background:
+                "conic-gradient(from 180deg at 50% 50%, #aa0047 0deg, #8a59f2 90deg, #aa0047 1turn), #8a59f2",
+              // transition: "transform 0.3s ease-in-out",
+              "&:hover": { transform: "scale(1.05)" },
             }}
           >
             <CardMedia
@@ -424,7 +440,7 @@ const Home = () => {
                 style={{
                   fontWeight: "400",
                   fontSize: "2rem",
-                  color: "black",
+                  color: "white",
                   letterSpacing: ".02rem",
                 }}
               >
@@ -441,7 +457,11 @@ const Home = () => {
               alignItems: "center",
               boxShadow: "0 2px 8px rgba(0,0,0, .08)",
                transition: "transform 0.3s ease-in-out",
-              backgroundColor:"grey"
+      
+               background:
+                 "conic-gradient(from 180deg at 50% 50%, #00aa3a 0deg, #0f2597 90deg, #00aa3a 1turn), #8a59f2",
+              //  transition: "transform 0.3s ease-in-out",
+               "&:hover": { transform: "scale(1.05)" },
             }}
           >
             <CardMedia
